@@ -1,0 +1,150 @@
+// Imports
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Colors
+
+$bgcolor: #EEEEEE;
+$maindarkcolor: #0B0C10;
+$mainlightercolor: #202833;
+$maintextcolor: #C5C6C8;
+$themedarkcolor: #46A29F;
+$themelightcolor: #66FCF1;
+
+// Custom styles
+
+body{
+    background-color: $bgcolor;
+    color: $maintextcolor;
+}
+
+// Mobile view
+
+// Navigation bar
+
+.navigation .container-fluid .navbar{
+    background-color: $maindarkcolor;
+}
+
+.collapse{
+    justify-content: flex-end;
+}
+
+.navbar-brand{
+    margin-left: 16px;
+}
+
+// Hero image
+.hero-image .container-fluid{
+    padding: 0;
+}
+
+.hero-image{
+    background-image: url(../assets/hero.png);
+    background-color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    height: 100vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-lg {
+    font-size: 1rem;
+}
+
+// History
+.history{
+    color: rgb(95, 95, 95);
+    border-bottom: 1px #000;
+}
+.history h1{
+    color: #000000;
+    margin-bottom: 32px;
+}
+.history p{
+    text-align: justify;
+}
+.history .container-fluid .px-4{
+    border-bottom: 1px solid #5f5f5f;
+}
+.history img{
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+// Breeds
+.breeds h1{
+    color: #000000;
+    margin-bottom: 32px;
+}
+.breeds img{
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 500px;
+    
+}
+.breeds .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+.breeds .container-fluid .carousel-item img::after{
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    box-shadow: inset 0px 0px 100px black;
+    z-index: 999;
+}
+.breeds .carousel-caption{
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+.breeds .carousel-caption h3{
+    color: white !important;
+    z-index: 1000;
+    margin-bottom: 0;    
+}
+// Contact
+
+.contact h1{
+    color: #000000;
+    margin-bottom: 32px;
+}
+.contact .container-fluid .py-5{
+    border-top: 1px solid #5f5f5f;
+}
+.contact label{
+    color: #000;
+}
+
+// Footer
+
+.footer{
+    background-color: $maindarkcolor;
+    padding: 8px 0px;
+}
+.footer span{
+    color: rgb(185, 185, 185) !important;
+}
+
+// Media width
+
+@media only screen and (max-width: 768px) {
+    .to-hide{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1430px) {
+    .hero-image{
+        background-size: cover;
+    }
+}
+
+
+#img1{
+    
+}
